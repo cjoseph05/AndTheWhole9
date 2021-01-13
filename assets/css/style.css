@@ -1,3 +1,4 @@
+
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
     background: #1c2331 !important;
@@ -17,7 +18,7 @@ html {
 }
 @media only screen and (max-width: 768px) {
   .navbar {
-    background-color: #1c2331;
+    background-color: #000000b7;
   }
 }
 
@@ -34,17 +35,72 @@ html {
 
 .cover-content {
   position: relative;
-  right: 20%;
+  right: 25%;
+
+  border-radius: 10px;
+  background-color: #0000002c;
+  backdrop-filter: blur(2px);
 }
 
+@media only screen and (max-width: 1024px) {
+  .cover-content {
+    position: relative;
+    right: 10%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cover-content {
+    position: relative;
+    right: 0%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .cover-content {
+    margin: 1rem;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.452);
+  }
+}
+.hieght-adjust {
+  position: relative;
+  top: 7.5%;
+}
+
+.clear-gutters {
+  padding: 0% !important;
+  margin: 0% !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
 .cover-subDisplay {
   color: rgb(226, 226, 226);
+  font-size: 1.55rem;
+  letter-spacing: 0.1rem;
 }
 
 .cover-display {
   color: rgb(226, 226, 226);
+  font-size: 6.25rem;
+  letter-spacing: 0.1rem;
+}
+
+.coming-soon {
+  color: rgb(226, 226, 226);
+  font-size: 2rem;
+  letter-spacing: 1rem;
 }
 
 .cover-desc {
   color: rgb(226, 226, 226);
+}
+
+.font-smythe {
+  font-family: "Smythe", cursive;
+}
+
+.font-lakki {
+  font-family: "Lakki Reddy", cursive;
 }
