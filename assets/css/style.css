@@ -21,8 +21,6 @@ html {
 @media only screen and (max-width: 425px) {
   .view {
     background-image: url("../images/Background_mobile.png");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .mask {
@@ -140,7 +138,7 @@ html {
     letter-spacing: 0rem;
   }
   .coming-soon {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: #8d5697;
     line-height: 55%;
     letter-spacing: 0.5rem;
@@ -149,6 +147,10 @@ html {
 
   .cover-desc {
     color: rgb(226, 226, 226);
+  }
+
+  .sub-row {
+    margin-top: 1rem;
   }
 }
 
@@ -175,7 +177,7 @@ html {
     letter-spacing: 0rem;
   }
   .coming-soon {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: #8d5697;
     line-height: 55%;
     letter-spacing: 0.2rem;
