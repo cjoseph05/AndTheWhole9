@@ -51,7 +51,7 @@ html {
 
 .hieght-adjust {
   position: relative;
-  top: 5%;
+  top: 6%;
 }
 
 @media only screen and (max-width: 425px) {
@@ -113,6 +113,51 @@ html {
 
 .cover-desc {
   color: rgb(226, 226, 226);
+}
+
+@media only screen and (max-width: 760px) {
+  .cover-subDisplay {
+    color: #ceddd0;
+    font-size: 1.35rem;
+    letter-spacing: 0rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .hieght-adjust {
+    position: relative;
+    top: 8.5%;
+  }
+
+  .cover-display {
+    /* color: rgb(226, 226, 226); */
+    color: #d7c690;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+
+    font-size: 4.75rem;
+    letter-spacing: 0rem;
+  }
+  .coming-soon {
+    font-size: 2.5rem;
+    color: #8d5697;
+    line-height: 55%;
+    letter-spacing: 0.25rem;
+    text-align: center;
+  }
+
+  .bottom-adjust {
+    position: relative;
+    bottom: 2%;
+  }
+
+  .cover-desc {
+    color: rgb(226, 226, 226);
+  }
+
+  .sub-row {
+    margin-top: 1rem;
+  }
 }
 
 @media only screen and (max-width: 425px) {
