@@ -1,27 +1,79 @@
-@media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
-    background: #1c2331 !important;
-  }
-}
 .view,
 body,
 html {
   height: 100%;
 }
-.navbar {
-  background-color: rgba(0, 0, 0, 0);
+
+.view {
+  background-image: url("../images/Background_desktopB.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.page-footer,
-.top-nav-collapse {
-  background-color: #1c2331;
+
+.mask {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.842),
+    rgba(0, 0, 0, 0) 55%
+  );
 }
-@media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #000000b7;
+
+@media only screen and (max-width: 425px) {
+  .view {
+    background-image: url("../images/Background_mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .mask {
+    background: none;
   }
 }
 
-/* Nav Link Icons */
+@media only screen and (min-width: 769px) {
+  .clear-gutters {
+    padding: 0% !important;
+    margin: 0% !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+
+.cover-content {
+  margin-left: 6rem;
+
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.842),
+    rgba(0, 0, 0, 0) 55%
+  );
+  backdrop-filter: blur(1.5px);
+}
+
+.hieght-adjust {
+  position: relative;
+  top: 5%;
+}
+
+@media only screen and (max-width: 425px) {
+  .cover-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    background-color: #0000005d;
+    backdrop-filter: blur(1.5px);
+  }
+
+  .clear-gutters {
+    padding: none !important;
+    margin: none !important;
+    margin-left: none !important;
+    margin-right: none !important;
+  }
+}
+
+/* Link Buttons */
 .social-links:hover {
   background-color: #ab975e;
   filter: drop-shadow(3px 0px 10px #6a2c74);
@@ -30,57 +82,19 @@ html {
   background-color: #3f3f3f;
 }
 
-.clear-gutters {
-  padding: 0% !important;
-  margin: 0% !important;
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
-}
-
 /* Typography */
 
-.cover-content {
-  /* position: relative;
-  bottom: 10%; */
-
-  margin-left: 6rem;
-
-  border-radius: 10px;
-  /* background-color: #0000005d; */
-  /* box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.733); */
-  backdrop-filter: blur(1.5px);
+.font-smythe {
+  font-family: "Smythe", cursive;
 }
 
-@media only screen and (max-width: 1024px) {
-  /* .cover-content {
-    position: relative;
-    right: 10%;
-  } */
-}
-
-@media only screen and (max-width: 768px) {
-  /* .cover-content {
-    position: relative;
-    right: 0%;
-  } */
-}
-
-@media only screen and (max-width: 425px) {
-  /* .cover-content {
-    margin: 1rem;
-    padding: 0.5em;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.452);
-  } */
-}
-.hieght-adjust {
-  position: relative;
-  top: 5%;
+.font-lakki {
+  font-family: "Lakki Reddy", cursive;
 }
 
 .cover-subDisplay {
   color: #ceddd0;
-  font-size: 1.55rem;
+  font-size: 1.5rem;
   letter-spacing: 0.1rem;
 }
 
@@ -99,51 +113,78 @@ html {
   letter-spacing: 0.75rem;
 }
 
-.coming-soon span:nth-child(1) {
-  color: #6a2c74;
-}
-.coming-soon span:nth-child(2) {
-  color: #214038;
-}
-.coming-soon span:nth-child(3) {
-  color: #ab975e;
-}
-.coming-soon span:nth-child(4) {
-  color: #6a2c74;
-}
-.coming-soon span:nth-child(5) {
-  color: #214038;
-}
-.coming-soon span:nth-child(6) {
-  color: #ab975e;
-}
-.coming-soon span:nth-child(7) {
-  color: #6a2c74;
-}
-.coming-soon span:nth-child(8) {
-  color: #214038;
-}
-.coming-soon span:nth-child(9) {
-  color: #ab975e;
-}
-.coming-soon span:nth-child(10) {
-  color: #a03daf;
-}
-.coming-soon span:nth-child(11) {
-  color: #214038;
-}
-.coming-soon span:nth-child(12) {
-  color: #ab975e;
-}
-
 .cover-desc {
   color: rgb(226, 226, 226);
 }
 
-.font-smythe {
-  font-family: "Smythe", cursive;
+@media only screen and (max-width: 425px) {
+  .cover-subDisplay {
+    color: #ceddd0;
+    font-size: 1.35rem;
+    letter-spacing: 0rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .hieght-adjust {
+    position: none;
+  }
+
+  .cover-display {
+    /* color: rgb(226, 226, 226); */
+    color: #d7c690;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+
+    font-size: 3.05rem;
+    letter-spacing: 0rem;
+  }
+  .coming-soon {
+    font-size: 2rem;
+    color: #8d5697;
+    line-height: 55%;
+    letter-spacing: 0.5rem;
+    text-align: center;
+  }
+
+  .cover-desc {
+    color: rgb(226, 226, 226);
+  }
 }
 
-.font-lakki {
-  font-family: "Lakki Reddy", cursive;
+@media only screen and (max-width: 320px) {
+  .cover-subDisplay {
+    color: #ceddd0;
+    font-size: 1.15rem;
+    letter-spacing: 0rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .hieght-adjust {
+    position: none;
+  }
+
+  .cover-display {
+    /* color: rgb(226, 226, 226); */
+    color: #d7c690;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+
+    font-size: 2.55rem;
+    letter-spacing: 0rem;
+  }
+  .coming-soon {
+    font-size: 1.7rem;
+    color: #8d5697;
+    line-height: 55%;
+    letter-spacing: 0.2rem;
+    text-align: center;
+  }
+
+  .cover-desc {
+    color: rgb(226, 226, 226);
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+  }
 }
