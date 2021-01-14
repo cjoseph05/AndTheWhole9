@@ -30,14 +30,14 @@
 
     <nav class="navbar fixed-top py-0">
       <div class="container-fluid px-2 mx-3">
-        <a class="navbar-brand" href="#">
+        <!-- <a class="navbar-brand" href="#">
           <img
             src="assets/images/TheWholeNine_FinalBasicWhite.png"
             height="35"
             alt=""
             loading="lazy"
           />
-        </a>
+        </a> -->
 
         <!-- <ul class="navbar-nav nav-flex-icons">
           <li class="nav-item mr-2">
@@ -71,7 +71,7 @@
     >
       <!-- Mask-->
       <div
-        class="mask d-flex justify-content-center align-items-center"
+        class="mask d-flex justify-content-start align-items-center"
         style="
           background: linear-gradient(
             90deg,
@@ -81,11 +81,22 @@
         "
       >
         <!-- Content -->
-        <div class="row cover-content p-2">
-          <div class="col">
+        <div
+          class="row cover-content p-3"
+          style="
+            background: linear-gradient(
+              180deg,
+              rgba(0, 0, 0, 0.842),
+              rgba(0, 0, 0, 0) 55%
+            );
+          "
+        >
+          <div class="col p-2">
             <div class="row hieght-adjust">
               <h5 class="cover-subDisplay font-lakki clear-gutters">
-                The Experience of New Orleans Flavor, Spirit, Soul ...
+                The Experience of
+                <span style="color: #8d5697"> New Orleans </span> Flavor,
+                Spirit, Soul ...
               </h5>
             </div>
             <div class="row text-left">
@@ -100,7 +111,9 @@
             </div>
             <div class="row text-center">
               <div class="col">
-                <p class="m-0 p-0 cover-desc">Subscribe to stay updated.</p>
+                <p class="m-0 p-0 cover-desc">
+                  Subscribe to our newsletter to stay updated.
+                </p>
               </div>
             </div>
 
@@ -118,7 +131,7 @@
                   novalidate
                 >
                   <!-- Name input -->
-                  <div class="form-outline mb-4">
+                  <div class="form-outline form-white mb-4">
                     <input
                       type="text"
                       id="form5Example1"
@@ -128,7 +141,7 @@
                   </div>
 
                   <!-- Email input -->
-                  <div class="form-outline mb-4">
+                  <div class="form-outline form-white mb-4">
                     <input
                       type="email"
                       class="form-control required email"
@@ -147,17 +160,17 @@
                     value="Subscribe"
                     name="subscribe"
                     id="mc-embedded-subscribe"
-                    class="button btn btn-primary btn-block mb-4"
+                    class="button btn btn-primary btn-block mb-4 social-links"
                   >
                     Subscribe
                   </button>
 
                   <!-- Register buttons -->
                   <div class="text-center">
-                    <p>and check us out on:</p>
+                    <p class="text-white">Check us out on:</p>
                     <a
                       href=""
-                      class="btn btn-primary btn-floating mx-1"
+                      class="btn btn-primary btn-floating mx-1 social-links"
                       target="_blank"
                     >
                       <i class="fab fa-facebook-f fa-lg"></i>
@@ -165,7 +178,7 @@
 
                     <a
                       href=""
-                      class="btn btn-primary btn-floating mx-1"
+                      class="btn btn-primary btn-floating mx-1 social-links"
                       target="_blank"
                     >
                       <i class="fab fa-twitter fa-lg"></i>
@@ -173,7 +186,7 @@
 
                     <a
                       href=""
-                      class="btn btn-primary btn-floating mx-1"
+                      class="btn btn-primary btn-floating mx-1 social-links"
                       target="_blank"
                     >
                       <i class="fab fa-instagram fa-lg"></i>
